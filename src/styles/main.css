@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-cream: #fdfbf7;
+  --color-cream-dark: #f5f0e8;
+  --color-malt: #e8dcc8;
+  --color-green-light: #ebf5ed;
+  --color-green-mid: #c8e6c9;
+  --color-green-accent: #81c784;
+  --color-green-deep: #4a7c59;
+  --color-cheese: #f5e6c8;
+  --color-forest: #2d5a3d;
+  --color-text-primary: #3d3d3d;
+  --color-text-secondary: #7a7a7a;
+  --color-text-light: #b0b0b0;
+  --color-white: #ffffff;
+  --color-danger: #e57373;
+  --color-danger-light: #ffebee;
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --radius-lg: 20px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.el-button--primary {
+  background: var(--color-green-accent) !important;
+  border-color: var(--color-green-accent) !important;
+}
+
+.el-button--primary:hover {
+  background: var(--color-green-deep) !important;
+  border-color: var(--color-green-deep) !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-up-leave-active {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
